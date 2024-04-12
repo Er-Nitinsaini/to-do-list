@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(/pexels-ann-h-1888009.jpg);
+    background-image: url(pexels-ann-h-1888009.jpg);
     background-size: cover; /* Ensures the background image covers the entire container */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background image fixed within the viewport */
