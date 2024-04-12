@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <h1>TO-DO LIST</h1>
+    <div class="box">
+        <input type="text" id="taskInput" placeholder="Enter your task">
+        <button class="add" onclick="addTask()"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <div class="task-list">
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="customAlertModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage"></p>
+            <button id="closeAlertBtn">OK</button>
+        </div>
+    </div>
+
+    <!-- Custom Edit Task Modal -->
+<div id="editTaskModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Edit Task</h2>
+        <input type="text" id="editTaskInput" placeholder="Enter your edited task">
+        <button id="confirmEditBtn">Confirm</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
