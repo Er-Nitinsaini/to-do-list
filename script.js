@@ -134,3 +134,11 @@ taskInput.addEventListener('keypress', function(event) {
         addTask();
     }
 });
+
+let editTaskInput = document.getElementById('editTaskInput');
+
+editTaskInput.addEventListener('keypress', (e)=>{
+    if(e.key === 'Enter'){editTask(taskText);}
+});
+
+
